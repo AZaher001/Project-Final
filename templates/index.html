@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Data Collect Predict</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="/static/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="/static/css/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<form action="/predict">
+					<h3>Diamonds Predict App</h3>
+					<p>Model deployment  Diamonds Predict Price App ML .</p>
+        
+					<label class="form-group">
+						<input type="number" min="0.1"  max="10" step=0.01 id= "totalAmt"  class="form-control"  required name="Carat" >
+						<span for="Carat">Carat (min="0.1"  max="10)</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group" >
+						<select name="cut" style='width:100%; height: 45px; color: #0000ff;'>
+ 							<option value="0000">Fair</option>
+							<option value="1000">Good</option>
+							<option value="0001">Very Good</option>
+							<option value="0010">Premium</option>
+							<option value="0100">Ideal</option>
+                        </select>
+                    </label>
+					<label class="form-group" >
+						<select name="color" style='width:100%; height: 45px; color: blue;'>
+							<option value="000001">J</option>
+							<option value="000010">I</option>
+							<option value="000100">H</option>
+							<option value="001000">G</option>
+							<option value="010000">F</option>
+							<option value="100000">E</option>
+							<option value="000000">D</option>
+						</select>
+					</label>
+					<label class="form-group" >
+						<select name="clarity" style='width:100%; height: 45px; color: blue;'>
+							<option value="0000000">I1</option>
+							<option value="0100000">SI1</option>
+							<option value="0010000">SI2</option>
+							<option value="0001000">VS1</option>
+							<option value="0000100">VS2</option>
+							<option value="0000010">VVS1</option>
+							<option value="0000001">VVS2</option>
+							<option value="1000000">IF</option>
+						</select>
+					</label>
+					<label class="form-group">
+						<input type="number" step=0.01 min="30" max="100" id="totalAmt" class="form-control"  required name="depth">
+						<span for="depth">depth (min="30" max="100" )</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="number" min="30" max="100" step=0.01 id="totalAmt" class="form-control"  required name="Table">
+						<span for="Table">Table (min="30" max="100")</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="number" min="1"  max ="20" step=0.01 id="totalAmt" class="form-control"  required name="X">
+						<span for="X">X (min="1" max="20")</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="number" min="1" max="70" step=0.01 id="totalAmt" class="form-control"  required name="Y">
+						<span for="Y">Y (min="1" max="70")</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="number" min="1" max="50" step=0.01 id="totalAmt"  class="form-control"  required name="Z">
+						<span for="Z">Z (min="1" max="50")</span>
+						<span class="border"></span>
+					</label>
+					<button type="submit" >Predict
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+                </form>
+			</div>
+		</div>
+		
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
